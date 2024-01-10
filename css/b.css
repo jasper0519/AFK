@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/*視窗背景色設定*/
+body{
+    background-color: rgb(188, 214, 238);
+    background-image:url(../img/背景.png);
+    background-repeat: repeat-x;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100px 350px;
+}
+
+/*連結顏色設定*/
+a{
+    color: #df4839;
+}
+a:hover{
+   background-color: #be8eeb;
+   transition: 0.5s ease-in background-color;
+   
+}
+
+/*頁首,導覽,頁尾的共通設定*/
+header,nav,footer{
+    text-align: center;
+}
+
+/*導覽樣式設定*/
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+    width: 180px;
+    margin: 0 10px;
+}
+.menu a{
+    display: block;
+    padding: 10px;
+    background: #c083c2;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu a:hover{
+    background: #609ab1;
+}
+
+/*頁面標題設定*/
+h1{
+   width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 5px solidrgb(228, 145, 43);
+    background-color: #553f05;
+    color: #fff;
+    font-size: 300%;
+    border-radius: 30%;
+    text-align: center;
+    line-height: 1;
+    box-shadow: 0px 5px 5px rgb(106, 105, 216);
+    text-shadow: 1px 1px 2px #5e4cff;
+    background-image: linear-gradient(to bottom, #a0c7f0, #caafe4);
+    font-family: 'Noto Serif Traditional Chinese', cursive ;
+
+}
+h2{
+    flex-wrap: wrap;
+    align-content: center;
+    width: 550px;
+}
+
+/*次標題設定*/
+.h{
+    border: 1px dotted black;
+    padding: 10px;
+    margin-left: 505px;
+    border-left: 10px solid rgb(33, 202, 27);
+    border-radius: 5%;
+    color: rgb(228, 141, 27);
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+}
+
+/*小標題設定*/
+.h-sub {
+    font: weight 400px;;
+    padding: 10px;
+    background-color: #e9d594;
+    color: #9562d6da;
+    border-radius: 50px;
+    box-shadow: 0 0 5px 2px #ffd0ad inset;
+    text-align: center;
+    width: auto;
+}
+
+
+/*內容區塊邊框設定*/
+#contents{
+    margin: 40px;
+    padding: 40px 80px;
+    border: 1px solid #c4602e;
+    background-color: #fff;
+}
+
+/*「更多介紹」連結設定*/
+.more{
+    text-align: right;
+}
+.more::after{
+    content: url(../img/ico_arrow.png);
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+/*連結圖示設定*/
+a[target="_blank"]::after{
+    content: url(../img/ico_blank.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+a[target="_mailot"]::after{
+    content: url(../img/ico_mail.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/*區塊間分隔*/
+#contents > section+section{
+    margin-top: 80px;
+}
+
+/*圓形圖片設定*/
+.photo{
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(121, 91, 228, 0.5);
+    
+}
+
+.py{
+    text-align: center;
+}
+#intro{
+    display: flex;
+    justify-content: center;
+}
+.flex{
+    text-align: center;
+}
+.product{
+    display: flex;
+    justify-content: flex-start;
+}
+.ml{
+    list-style-type: none;
+    border: 1px solid #f00;
+}
+.me{
+    display: flex;
+    justify-content: space-around;
+}
+.m2{
+    list-style-type: none;
+    border: 5px solid rgb(14, 136, 130);
+    text-align: center;
+}

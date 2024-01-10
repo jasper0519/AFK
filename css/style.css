@@ -1,3 +1,35 @@
-h1{color: rgb(159, 108, 207);}
+h1{
+    width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    font-size: 300%;
+    text-align: center;
+    line-height: 1;
+    border: 5px solid hsl(308, 88%, 73%);
+    background-color: rgb(255, 119, 230);
+    color: #fff;}
 
 body{background-color: rgb(240, 217, 221);}
+
+a{
+    font-size: 300%;
+    text-align: center;
+    color:#df4839}
+
+.menu li{
+    list-style-type: none;
+    border: 1px solid #f00;
+    display: inline-block;
+    width: 180px;  
+}
+
+
+.menu a:hover {
+    background: #90ddbb;
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    background: #6fbb9a;
+    color: #fff;
+}
